@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: "mori-bold";
+    src: url("./fonts/MoriGothic-Bold.woff2") format("woff2");
+  }
+  @font-face {
+    font-family: "mori-medium";
+    src: url("./fonts/MoriGothic-Medium.woff2") format("woff2");
+  }
+  @font-face {
+    font-family: "mori-semibold";
+    src: url("./fonts/MoriGothic-Semibold.woff2") format("woff2");
+  }
+  @font-face {
+    font-family: "mori-regular";
+    src: url("./fonts/MoriGothic-regular.woff2") format("woff2");
+  }
+}
+
+.header-img-parent {
+  height: 75vh;
+  perspective: 800px;
+  overflow: hidden;
+  position: relative;
+  z-index: 40;
+}
+
+.header-img-parent::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 300px;
+  /* background-color: aqua; */
+  background-image: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0),
+    rgb(255, 255, 255),
+    rgb(255, 255, 255)
+  );
+}
+
+.header-img {
+  width: 90%;
+  margin: 0 auto;
+  transform-style: preserve-3d;
+  will-change: transform;
+  -webkit-transform-style: preserve-3d;
+}
