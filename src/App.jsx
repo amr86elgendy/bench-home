@@ -7,9 +7,9 @@ import {
 } from "framer-motion";
 import { useRef, useState } from "react";
 import Navbar from "./layout/Navbar";
-import Card from "./sections/Card";
 import CardScroll from "./sections/CardScroll";
 import Footer from "./sections/Footer";
+import GridCards from "./sections/gridCards";
 import Hero from "./sections/Hero";
 import Image from "./sections/Image";
 import Logos from "./sections/Logos";
@@ -35,7 +35,7 @@ function App() {
       
       <Logos baseVelocity={1} />
       <Logos baseVelocity={-1} />
-      <Card />
+      <GridCards />
       {/* <motion.div style={{ scale: containerScale }} ref={ref} className='relative z-10 w-full'>
         <CardScroll/> 
         <div className='h-screen'></div>
