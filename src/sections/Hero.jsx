@@ -4,7 +4,7 @@ import { motion, useScroll, useTransform } from "framer-motion";
 const Hero = () => {
   const ref = useRef();
   const { scrollYProgress } = useScroll();
-  const opacity = useTransform(scrollYProgress, [0, 0.3], [1, 0]);
+  const opacity = useTransform(scrollYProgress, [0, 0.1], [1, 0]);
   const scale = useTransform(scrollYProgress, [0, 0.5], [1, 0.9]);
   const position = useTransform(scrollYProgress, (pos) => {
     return pos === 1 ? "relative" : "fixed";

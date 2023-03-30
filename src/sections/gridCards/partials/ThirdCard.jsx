@@ -2,12 +2,12 @@ import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { AiOutlinePlus } from 'react-icons/ai';
 
-const SecondCard = () => {
+const ThirdCard = () => {
   const [isAnimated, setIsAnimated] = useState(false);
   return (
-    <article className='flex overflow-hidden h-[43rem] bg-[#f4efff] border border-[rgba(32, 32, 32, 0.05)] rounded-xl'>
-      <div className='grid grid-cols-1 auto-cols-fr gap-8 items-start justify-between relative overflow-hidden flex-1'>
-        <div className='grid grid-cols-1 grid-rows-[repeat(3,auto)] auto-cols-fr absolute overflow-hidden mt-10 px-10 pointer-events-none gap-8 max-w-[75%] w-full'>
+    <article className='flex overflow-hidden h-[43rem] bg-[#fffdcd] border border-[rgba(32, 32, 32, 0.05)] rounded-xl'>
+      <div className='grid grid-cols-1 gap-8 items-start justify-between relative overflow-hidden flex-1'>
+        <div className='grid grid-cols-1 absolute overflow-hidden mt-10 px-10 pointer-events-none gap-8 max-w-[75%]'>
           <motion.div
             animate={
               !isAnimated
@@ -26,7 +26,6 @@ const SecondCard = () => {
                     },
                   }
             }
-            className='pointer-events-none'
           >
             <h3 className='font-semibold text-xl tracking-tighter mb-2'>
               Scale faster
@@ -54,7 +53,6 @@ const SecondCard = () => {
                     },
                   }
             }
-            className='pointer-events-none'
           >
             <h3 className='font-semibold text-xl tracking-tighter mb-2'>
               Scale faster
@@ -82,35 +80,6 @@ const SecondCard = () => {
                     },
                   }
             }
-            className='pointer-events-none'
-          >
-            <h3 className='font-semibold text-xl tracking-tighter mb-2'>
-              Scale faster
-            </h3>
-            <p className='opacity-60 font-medium'>
-              Easily launch new products and categories. Have them synced
-              directly to all your online sales channels and 3PLs.
-            </p>
-          </motion.div>
-          <motion.div
-            animate={
-              !isAnimated
-                ? {
-                    x: '-100%',
-                    opacity: 0,
-                    transition: { ease: 'linear' },
-                  }
-                : {
-                    x: '0',
-                    opacity: 1,
-                    transition: {
-                      ease: 'easeIn',
-                      delay: 0.5,
-                      duration: 0.35,
-                    },
-                  }
-            }
-            className='pointer-events-none'
           >
             <h3 className='font-semibold text-xl tracking-tighter mb-2'>
               Scale faster
@@ -121,7 +90,7 @@ const SecondCard = () => {
             </p>
           </motion.div>
         </div>
-        <div className='flex flex-col h-full py-10 pr-8 pl-10 justify-between items-start'>
+        <div className='flex h-full py-10 pr-8 pl-10 flex-col justify-between items-start'>
           <div className='overflow-hidden'>
             <motion.div
               animate={
@@ -153,7 +122,7 @@ const SecondCard = () => {
           </div>
           <div className='absolute flex justify-center items-center w-full h-full pointer-events-none'>
             <motion.img
-              src='/second-card-img.png'
+              src='/third-card-img.png'
               alt=''
               animate={
                 !isAnimated
@@ -176,7 +145,7 @@ const SecondCard = () => {
                       opacity: 0.8,
                     }
               }
-              className='align-middle inline-block max-w-full rounded-tl-lg rounded-bl-lg overflow-hidden w-[500px] shadow-second-grid-card-img'
+              className='align-middle inline-block max-w-full rounded-tl-lg rounded-bl-lg overflow-hidden mb-2 w-[450px]'
             />
           </div>
           <button
@@ -203,6 +172,6 @@ const SecondCard = () => {
       </div>
     </article>
   );
-};
+}
 
-export default SecondCard;
+export default ThirdCard

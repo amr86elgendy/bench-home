@@ -1,7 +1,10 @@
 import FirstCard from './partials/FirstCard';
 import SecondCard from './partials/SecondCard';
+import ThirdCard from './partials/ThirdCard';
 import FourthCard from './partials/FourthCard';
 import SeventhCard from './partials/SeventhCard';
+import FifthCard from './partials/FifthCard';
+import SixthCard from './partials/SixthCard';
 
 const GridCards = () => {
   return (
@@ -19,7 +22,10 @@ const GridCards = () => {
         <section className='grid grid-cols-2 gap-4'>
           <FirstCard />
           <SecondCard />
+          <ThirdCard />
           <FourthCard />
+          <FifthCard />
+          <SixthCard />
           <SeventhCard />
         </section>
       </div>

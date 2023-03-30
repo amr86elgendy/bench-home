@@ -2,10 +2,10 @@ import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { AiOutlinePlus } from 'react-icons/ai';
 
-const SecondCard = () => {
+const SixthCard = () => {
   const [isAnimated, setIsAnimated] = useState(false);
   return (
-    <article className='flex overflow-hidden h-[43rem] bg-[#f4efff] border border-[rgba(32, 32, 32, 0.05)] rounded-xl'>
+    <article className='flex overflow-hidden h-[43rem] bg-[#20202008] border border-[rgba(32, 32, 32, 0.05)] rounded-xl'>
       <div className='grid grid-cols-1 auto-cols-fr gap-8 items-start justify-between relative overflow-hidden flex-1'>
         <div className='grid grid-cols-1 grid-rows-[repeat(3,auto)] auto-cols-fr absolute overflow-hidden mt-10 px-10 pointer-events-none gap-8 max-w-[75%] w-full'>
           <motion.div
@@ -29,11 +29,11 @@ const SecondCard = () => {
             className='pointer-events-none'
           >
             <h3 className='font-semibold text-xl tracking-tighter mb-2'>
-              Scale faster
+              Save time
             </h3>
             <p className='opacity-60 font-medium'>
-              Easily launch new products and categories. Have them synced
-              directly to all your online sales channels and 3PLs.
+              By centralising collaboration between operations, marketing and
+              finance teams and shortening decision time.
             </p>
           </motion.div>
           <motion.div
@@ -57,67 +57,14 @@ const SecondCard = () => {
             className='pointer-events-none'
           >
             <h3 className='font-semibold text-xl tracking-tighter mb-2'>
-              Scale faster
+              Manage teams
             </h3>
             <p className='opacity-60 font-medium'>
-              Easily launch new products and categories. Have them synced
-              directly to all your online sales channels and 3PLs.
-            </p>
-          </motion.div>
-          <motion.div
-            animate={
-              !isAnimated
-                ? {
-                    x: '-100%',
-                    opacity: 0,
-                    transition: { ease: 'linear' },
-                  }
-                : {
-                    x: '0',
-                    opacity: 1,
-                    transition: {
-                      ease: 'easeIn',
-                      delay: 0.4,
-                      duration: 0.35,
-                    },
-                  }
-            }
-            className='pointer-events-none'
-          >
-            <h3 className='font-semibold text-xl tracking-tighter mb-2'>
-              Scale faster
-            </h3>
-            <p className='opacity-60 font-medium'>
-              Easily launch new products and categories. Have them synced
-              directly to all your online sales channels and 3PLs.
-            </p>
-          </motion.div>
-          <motion.div
-            animate={
-              !isAnimated
-                ? {
-                    x: '-100%',
-                    opacity: 0,
-                    transition: { ease: 'linear' },
-                  }
-                : {
-                    x: '0',
-                    opacity: 1,
-                    transition: {
-                      ease: 'easeIn',
-                      delay: 0.5,
-                      duration: 0.35,
-                    },
-                  }
-            }
-            className='pointer-events-none'
-          >
-            <h3 className='font-semibold text-xl tracking-tighter mb-2'>
-              Scale faster
-            </h3>
-            <p className='opacity-60 font-medium'>
-              Easily launch new products and categories. Have them synced
-              directly to all your online sales channels and 3PLs.
+              Delegate operational tasks, approval processes and deadlines.
+              <br />
+              <br />
+              Edit, draft and comment on current projects to facilitate
+              workflows.
             </p>
           </motion.div>
         </div>
@@ -143,17 +90,17 @@ const SecondCard = () => {
               }
             >
               <h3 className='font-semibold text-xl tracking-tighter mb-2'>
-                Scale faster
+                Collaboration
               </h3>
               <p className='opacity-60 font-medium'>
-                Easily launch new products and categories. Have them synced
-                directly to all your online sales channels and 3PLs.
+                Work together with your team and your suppliers effectively and
+                productively.
               </p>
             </motion.div>
           </div>
           <div className='absolute flex justify-center items-center w-full h-full pointer-events-none'>
             <motion.img
-              src='/second-card-img.png'
+              src='/sixth-card-img.png'
               alt=''
               animate={
                 !isAnimated
@@ -176,7 +123,7 @@ const SecondCard = () => {
                       opacity: 0.8,
                     }
               }
-              className='align-middle inline-block max-w-full rounded-tl-lg rounded-bl-lg overflow-hidden w-[500px] shadow-second-grid-card-img'
+              className='align-middle inline-block max-w-full rounded-tl-lg rounded-bl-lg overflow-hidden w-[90%]'
             />
           </div>
           <button
@@ -205,4 +152,4 @@ const SecondCard = () => {
   );
 };
 
-export default SecondCard;
+export default SixthCard;
