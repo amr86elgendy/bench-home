@@ -145,7 +145,7 @@ const ThirdCard = () => {
                       opacity: 0.8,
                     }
               }
-              className='align-middle inline-block max-w-full rounded-tl-lg rounded-bl-lg overflow-hidden mb-2 w-[450px]'
+              className='align-middle inline-block max-w-full rounded-tl-lg rounded-bl-lg overflow-hidden w-[450px] mb-12'
             />
           </div>
           <button

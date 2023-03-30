@@ -123,7 +123,7 @@ const SixthCard = () => {
                       opacity: 0.8,
                     }
               }
-              className='align-middle inline-block max-w-full rounded-tl-lg rounded-bl-lg overflow-hidden w-[90%]'
+              className='align-middle inline-block max-w-full rounded-tl-lg rounded-bl-lg overflow-hidden w-[90%] mb-12'
             />
           </div>
           <button
