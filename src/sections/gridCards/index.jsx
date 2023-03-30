@@ -1,9 +1,12 @@
 import FirstCard from './partials/FirstCard';
+import SecondCard from './partials/SecondCard';
+import FourthCard from './partials/FourthCard';
+import SeventhCard from './partials/SeventhCard';
 
 const GridCards = () => {
   return (
     <section className='flex justify-center bg-[#fcfcfc]'>
-      <div className='container max-w-7xl py-28'>
+      <div className='container max-w-[1350px] max-w py-28'>
         <header className='flex flex-col items-center gap-12 h-72'>
           <button className='bg-[#ededed] border border-[rgba(32, 32, 32, 0.1)] rounded py-0.5 px-2 text-gray-500'>
             feature
@@ -15,6 +18,9 @@ const GridCards = () => {
         </header>
         <section className='grid grid-cols-2 gap-4'>
           <FirstCard />
+          <SecondCard />
+          <FourthCard />
+          <SeventhCard />
         </section>
       </div>
     </section>
