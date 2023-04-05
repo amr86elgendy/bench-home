@@ -51,21 +51,9 @@ const Footer = ({ smoothScroll }) => {
             studioessence.design
           </p>
         </div>
-        <div></div>
-
-        {/* <div className='mt-12 mb-6 pb-6 border-b border-neutral-800 w-4/6 mx-auto flex justify-between items-center'>
-          <h1 className='font-bold text-2xl text-white'>Logo</h1>
-          <ui className='flex gap-4 text-neutral-500 font-semibold text-lg list-none'>
-            <li>Benefits</li>
-            <li>Features</li>
-            <li>Integrations</li>
-            <li>FAQs</li>
-          </ui>
+        <div className="absolute top-0 left-0 right-0 mt-24">
+          <img src="footer-star.svg" alt="" className="absolute top-0 left-0 right-0 z-[-1] inline-block w-full max-w-full align-middle" />
         </div>
-        <p className='text-neutral-500'>
-          Genie Internet Technologies LTD 2023 —Made in Webflow by
-          studioessence.design
-        </p> */}
       </motion.footer>
     </>
   );
