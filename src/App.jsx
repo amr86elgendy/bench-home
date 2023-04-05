@@ -16,18 +16,15 @@ function App() {
   });
 
   const smoothScroll = useSpring(scrollYProgress, {
-    damping: 50,
-    stiffness: 400,
+    damping: 100,
+    stiffness: 900,
   });
 
-  const containerScale = useTransform(smoothScroll, [0.1, 0.2], [1, 0.92]);
+  const containerScale = useTransform(smoothScroll, [0.1, 0.15], [1, 0.92]);
 
   return (
     <div>
-      <motion.main
-        className='relative z-20 pointer-events-none'
-        style={{ scale: containerScale }}
-      >
+      <motion.main className='relative z-20' style={{ scale: containerScale }}>
         <Navbar />
         {/* <Hero />
         <Image /> */}
